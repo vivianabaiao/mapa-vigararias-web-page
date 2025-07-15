@@ -285,9 +285,7 @@ var lyr_areasmilitares_18 = new ol.layer.Vector({
 var format_areasnaointegradas_19 = new ol.format.GeoJSON();
 var features_areasnaointegradas_19 = format_areasnaointegradas_19.readFeatures(json_areasnaointegradas_19, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-
-/* START CUSTOM */
-
+ /* START CUSTOM */
 function createHatchFill() {
     const canvas = document.createElement('canvas');
     canvas.width = 8;
@@ -307,10 +305,8 @@ function createHatchFill() {
         color: context.createPattern(canvas, 'repeat')
     });
 }
-
 var fill_areasnaointegradas_19 = createHatchFill();
 /* END OF CUSTOM */
-
 var jsonSource_areasnaointegradas_19 = new ol.source.Vector({
     attributions: ' ',
 });
